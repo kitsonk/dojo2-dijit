@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		@import url('./node_modules/dijit/themes/dijit.css');
+		@import url('./node_modules/dijit/themes/claro/claro.css');
+	</style>
+</head>
+<body class="claro">
+	<script src="./node_modules/@dojo/loader/loader.min.js"></script>
+	<script>
+		dojoConfig = {
+			async: true
+		};
+
+		require.config({
+			packages: [
+				{ name: '@dojo', location: 'node_modules/@dojo' },
+				{ name: 'app', location: 'out' },
+				{ name: 'dojo', location: 'node_modules/dojo' },
+				{ name: 'dijit', location: 'node_modules/dijit' },
+				{ name: 'maquette', location: 'node_modules/maquette/dist', main: 'maquette' },
+				{ name: 'pepjs', location: 'node_modules/pepjs/dist', main: 'pep' }
+			]
+		});
+
+		require([ 'app' ], function () {});
+	</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+{
+  "name": "dojo2-dijit",
+  "version": "2.0.0-pre",
+  "description": "An example of integrating Dojo 1 into Dojo 2",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -p .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dojo Toolkit <dojo@dojotoolkit.org>",
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "@dojo/core": "beta2",
+    "@dojo/has": "beta2",
+    "@dojo/interfaces": "beta2",
+    "@dojo/loader": "beta2",
+    "@dojo/routing": "beta2",
+    "@dojo/shim": "beta2",
+    "@dojo/widget-core": "beta2",
+    "@dojo/widgets": "beta2",
+    "dijit": "^1.12.2",
+    "dojo": "^1.12.2",
+    "maquette": "^2.5.3",
+    "pepjs": "^0.4.3"
+  },
+  "devDependencies": {
+    "dojo-typings": "file:../typings/dojo-typings-1.11.8-pre.tgz",
+    "typescript": "~2.5.2"
+  }
+}
